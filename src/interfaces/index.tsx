@@ -7,8 +7,3 @@ export interface RowsInterface {
   id: number | string;
   title: string;
 }
-
-export interface RowKeyGetterInterface {
-  id: number;
-  name: string;
-}

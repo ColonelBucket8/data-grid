@@ -1,11 +1,6 @@
 import { useState } from "react";
-import DataGrid from "react-data-grid";
-import { SelectCellFormatter } from "react-data-grid";
-import {
-  ColumnsInterface,
-  RowsInterface,
-  RowKeyGetterInterface,
-} from "../interfaces";
+import DataGrid, { SelectCellFormatter, TextEditor } from "react-data-grid";
+import { ColumnsInterface, RowsInterface } from "../interfaces";
 import styles from "../styles/Homepage.module.css";
 
 const Homepage = () => {
@@ -31,11 +26,9 @@ const Homepage = () => {
     },
   ];
 
-  const rowKeyGetter = (row: RowKeyGetterInterface) => {
+  const rowKeyGetter = (row: RowsInterface) => {
     return row.id;
   };
-
-  const handleChange = (value:boolean, isShiftClick:boolean): void => {};
 
   return (
     <div className={styles.homepageContainer}>
@@ -46,11 +39,6 @@ const Homepage = () => {
         onRowsChange={setRows}
         rowKeyGetter={rowKeyGetter}
       />
-      {/* <SelectCellFormatter */}
-      {/*   value={true} */}
-      {/*   isCellSelected={true} */}
-      {/*   onChange={(value, isShiftClick) => handleChange(value, isShiftClick)} */}
-      {/* /> */}
     </div>
   );
 };
