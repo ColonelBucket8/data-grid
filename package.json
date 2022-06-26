@@ -8,9 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortune-sheet/react": "^0.5.7",
+    "ag-grid-community": "^27.3.0",
+    "ag-grid-react": "^27.3.0",
     "react": "^18.0.0",
     "react-data-grid": "^7.0.0-beta.13",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-spreadsheet": "^0.7.5",
+    "scheduler": "^0.23.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
